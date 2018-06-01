@@ -11,8 +11,24 @@ html {
           box-sizing: inherit;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
+
+  background-color: #67d0dc;
 }
 
 .weather {
@@ -22,11 +38,26 @@ body {
   height: 100vh;
 }
 
+.weather__loading {
+  width: 100px;
+  height: 100px;
+}
+
 .weather__wrapper {
   min-width: 300px;
   padding: 30px;
 
   text-align: center;
 
-  background-color: #ccc;
+  background-color: #dedc82;
+  border-radius: 10px;
+}
+
+.weather__temperature--measure {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.weather__temperature--measure:hover {
+  text-decoration: underline;
 }

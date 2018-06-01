@@ -9,12 +9,14 @@
 
 <body>
   <main class="weather">
-    <section class="weather__wrapper">
+    <img  class="weather__loading" src="http://gifimage.net/wp-content/uploads/2018/04/loader-gif-transparent-animated-7.gif" alt="loading gif">
+    <section class="weather__wrapper visually-hidden">
       <h1 class="weather__headline">Weather App</h1>
-      <img class="weather__img" src="#" alt="#">
-      <p class="weather__description">Clouds</p>
-      <span class="weather__temperature">42</span>
-      <p class="weather__location">West Yellowstone, US</p>
+      <img class="weather__img" src="#" alt="weather picture">
+      <p class="weather__description"></p>
+      <span class="weather__temperature--value"></span>
+      <a href="#" class="weather__temperature--measure"> °C</a>
+      <p class="weather__location"></p>
     </section>
   </main>
 
